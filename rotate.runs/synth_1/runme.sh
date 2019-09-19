@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log rotate_fpga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rotate_fpga.tcl
+EAStep vivado -log rotate_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rotate_top.tcl

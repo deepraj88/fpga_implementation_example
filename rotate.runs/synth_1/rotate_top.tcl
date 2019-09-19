@@ -16,8 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,13 +28,14 @@ set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/rotate_fpga.v
+read_verilog -library xil_defaultlib /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/imports/new/leftrotate.v
 read_vhdl -library xil_defaultlib {
   /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_parity.vhd
   /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_tx.vhd
   /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_rx.vhd
   /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart.vhd
   /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_wrapper2.vhd
+  /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/imports/new/leftrotate_top.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -50,10 +49,10 @@ read_xdc /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/
 set_property used_in_implementation false [get_files /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc]
 
 
-synth_design -top rotate_fpga -part xc7a35tcpg236-1
+synth_design -top rotate_top -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef rotate_fpga.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file rotate_fpga_utilization_synth.rpt -pb rotate_fpga_utilization_synth.pb"
+write_checkpoint -force -noxdef rotate_top.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file rotate_top_utilization_synth.rpt -pb rotate_fpga_utilization_synth.pb"

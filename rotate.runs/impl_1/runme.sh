@@ -38,6 +38,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log rotate_fpga.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source rotate_fpga.tcl -notrace
+EAStep vivado -log rotate_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source rotate_top.tcl -notrace
 
 

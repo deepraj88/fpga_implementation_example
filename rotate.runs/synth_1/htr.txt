@@ -6,4 +6,4 @@
 # Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log rotate_fpga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rotate_fpga.tcl
+vivado -log rotate_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rotate_top.tcl

@@ -2,72 +2,22 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Sep 19 08:30:01 2019
-# Process ID: 4624
-# Current directory: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1
-# Command line: vivado -log rotate_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rotate_fpga.tcl
-# Log file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1/rotate_fpga.vds
-# Journal file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1/vivado.jou
+# Start of session at: Thu Sep 19 13:59:24 2019
+# Process ID: 8536
+# Current directory: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1
+# Command line: vivado -log rotate_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rotate_top.tcl -notrace
+# Log file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1/rotate_top.vdi
+# Journal file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
-source rotate_fpga.tcl -notrace
-Command: synth_design -top rotate_fpga -part xc7a35tcpg236-1
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4635 
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1288.406 ; gain = 86.996 ; free physical = 1283 ; free virtual = 10510
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'rotate_fpga' [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/rotate_fpga.v:10]
-INFO: [Synth 8-638] synthesizing module 'uart_wrapper2' [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_wrapper2.vhd:59]
-	Parameter CLK_FREQ bound to: 100000000 - type: integer 
-	Parameter BAUD_RATE bound to: 115200 - type: integer 
-	Parameter PARITY_BIT bound to: none - type: string 
-	Parameter NO_BYTE_SEND bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_wrapper2.vhd:52]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_wrapper2.vhd:55]
-INFO: [Synth 8-226] default block is never used [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_wrapper2.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'UART' [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart.vhd:42]
-	Parameter CLK_FREQ bound to: 100000000 - type: integer 
-	Parameter BAUD_RATE bound to: 115200 - type: integer 
-	Parameter PARITY_BIT bound to: none - type: string 
-	Parameter USE_DEBOUNCER bound to: 1 - type: bool 
-INFO: [Synth 8-638] synthesizing module 'UART_TX' [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_tx.vhd:31]
-	Parameter PARITY_BIT bound to: none - type: string 
-INFO: [Synth 8-256] done synthesizing module 'UART_TX' (1#1) [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_tx.vhd:31]
-INFO: [Synth 8-638] synthesizing module 'UART_RX' [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_rx.vhd:31]
-	Parameter PARITY_BIT bound to: none - type: string 
-INFO: [Synth 8-256] done synthesizing module 'UART_RX' (2#1) [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_rx.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'UART' (3#1) [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'uart_wrapper2' (4#1) [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_wrapper2.vhd:59]
-WARNING: [Synth 8-6014] Unused sequential element a_d_reg was removed.  [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/rotate_fpga.v:90]
-WARNING: [Synth 8-6014] Unused sequential element b_d_reg was removed.  [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/rotate_fpga.v:91]
-WARNING: [Synth 8-6014] Unused sequential element rx_counter_reg was removed.  [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/rotate_fpga.v:92]
-WARNING: [Synth 8-3848] Net c in module/entity rotate_fpga does not have driver. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/rotate_fpga.v:31]
-INFO: [Synth 8-256] done synthesizing module 'rotate_fpga' (5#1) [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/rotate_fpga.v:10]
-WARNING: [Synth 8-3331] design rotate_fpga has unconnected port BTNU
-WARNING: [Synth 8-3331] design rotate_fpga has unconnected port BTNL
-WARNING: [Synth 8-3331] design rotate_fpga has unconnected port BTNR
-WARNING: [Synth 8-3331] design rotate_fpga has unconnected port BTND
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.938 ; gain = 129.527 ; free physical = 1296 ; free virtual = 10525
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.938 ; gain = 129.527 ; free physical = 1294 ; free virtual = 10523
----------------------------------------------------------------------------------
+source rotate_top.tcl -notrace
+Command: link_design -top rotate_top -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
 Parsing XDC File [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc]
 WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:12]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:12]
@@ -249,6 +199,30 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 WARNING: [Vivado 12-584] No ports matched 'an[3]'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:107]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:107]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'vauxp6'. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:209]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:209]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
@@ -298,366 +272,447 @@ WARNING: [Vivado 12-584] No ports matched 'vauxn15'. [/media/deepraj/Work/worksp
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc:231]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/constrs_2/imports/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rotate_fpga_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/rotate_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Completed Processing XDC Constraints
-
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1695.305 ; gain = 0.000 ; free physical = 1036 ; free virtual = 10273
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 1118 ; free virtual = 10356
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7a35tcpg236-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 1118 ; free virtual = 10356
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 1120 ; free virtual = 10358
----------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'tx_pstate_reg' in module 'UART_TX'
-INFO: [Synth 8-5544] ROM "tx_data_out_sel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tx_bit_count_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tx_clk_divider_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tx_busy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tx_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tx_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tx_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tx_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tx_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-802] inferred FSM for state register 'rx_pstate_reg' in module 'UART_RX'
-INFO: [Synth 8-5544] ROM "rx_output_reg_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "rx_receiving_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "rx_clk_divider_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "rx_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "rx_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "rx_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "rx_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "uart_clk_en" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element delay_counter_reg was removed.  [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/rotate_fpga.v:102]
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                              000 |                              000
-                  txsync |                              001 |                              001
-                startbit |                              010 |                              010
-                databits |                              011 |                              011
-                 stopbit |                              100 |                              101
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'tx_pstate_reg' using encoding 'sequential' in module 'UART_TX'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                               00 |                              000
-                startbit |                               01 |                              001
-                databits |                               10 |                              010
-                 stopbit |                               11 |                              100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'rx_pstate_reg' using encoding 'sequential' in module 'UART_RX'
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 1110 ; free virtual = 10348
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      6 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 2     
-	   2 Input      2 Bit       Adders := 2     
-+---Registers : 
-	               16 Bit    Registers := 1     
-	                8 Bit    Registers := 2     
-	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 3     
-	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 7     
-+---Muxes : 
-	   4 Input      8 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 2     
-	  12 Input      3 Bit        Muxes := 1     
-	   5 Input      2 Bit        Muxes := 5     
-	   9 Input      2 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 4     
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
-Module rotate_fpga 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      2 Bit       Adders := 1     
-+---Registers : 
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   4 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module UART_TX 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	  12 Input      3 Bit        Muxes := 1     
-	   5 Input      2 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 1     
-Module UART_RX 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
-+---Muxes : 
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   9 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 1     
-Module UART 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      6 Bit       Adders := 1     
-+---Registers : 
-	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module uart_wrapper2 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      2 Bit       Adders := 1     
-+---Registers : 
-	               16 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-+---Muxes : 
-	   5 Input      2 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 1     
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 90 (col length:60)
-BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element delay_counter_reg was removed.  [/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/rotate_fpga.v:102]
-WARNING: [Synth 8-3331] design rotate_fpga has unconnected port BTNU
-WARNING: [Synth 8-3331] design rotate_fpga has unconnected port BTNL
-WARNING: [Synth 8-3331] design rotate_fpga has unconnected port BTNR
-WARNING: [Synth 8-3331] design rotate_fpga has unconnected port BTND
-WARNING: [Synth 8-3332] Sequential element (tx_data_d_reg[15]) is unused and will be removed from module uart_wrapper2.
-WARNING: [Synth 8-3332] Sequential element (tx_data_d_reg[14]) is unused and will be removed from module uart_wrapper2.
-WARNING: [Synth 8-3332] Sequential element (tx_data_d_reg[13]) is unused and will be removed from module uart_wrapper2.
-WARNING: [Synth 8-3332] Sequential element (tx_data_d_reg[12]) is unused and will be removed from module uart_wrapper2.
-WARNING: [Synth 8-3332] Sequential element (tx_data_d_reg[11]) is unused and will be removed from module uart_wrapper2.
-WARNING: [Synth 8-3332] Sequential element (tx_data_d_reg[10]) is unused and will be removed from module uart_wrapper2.
-WARNING: [Synth 8-3332] Sequential element (tx_data_d_reg[9]) is unused and will be removed from module uart_wrapper2.
-WARNING: [Synth 8-3332] Sequential element (tx_data_d_reg[8]) is unused and will be removed from module uart_wrapper2.
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 1098 ; free virtual = 10337
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 973 ; free virtual = 10212
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 971 ; free virtual = 10211
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module uart_wrapper2.
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 969 ; free virtual = 10209
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 971 ; free virtual = 10211
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 971 ; free virtual = 10211
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 971 ; free virtual = 10211
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 971 ; free virtual = 10211
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 971 ; free virtual = 10211
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 971 ; free virtual = 10211
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |     4|
-|3     |LUT1   |     4|
-|4     |LUT2   |    23|
-|5     |LUT3   |    12|
-|6     |LUT4   |     9|
-|7     |LUT5   |     7|
-|8     |LUT6   |    23|
-|9     |MUXF7  |     1|
-|10    |FDCE   |     2|
-|11    |FDPE   |    17|
-|12    |FDRE   |    58|
-|13    |FDSE   |     6|
-|14    |IBUF   |     3|
-|15    |OBUF   |     1|
-+------+-------+------+
-
-Report Instance Areas: 
-+------+------------------+--------------+------+
-|      |Instance          |Module        |Cells |
-+------+------------------+--------------+------+
-|1     |top               |              |   171|
-|2     |  u_uart_wrapper2 |uart_wrapper2 |   116|
-|3     |    uart          |UART          |   103|
-|4     |      uart_rx_i   |UART_RX       |    35|
-|5     |      uart_tx_i   |UART_TX       |    48|
-+------+------------------+--------------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 971 ; free virtual = 10211
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1695.305 ; gain = 129.527 ; free physical = 1023 ; free virtual = 10263
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1695.305 ; gain = 493.895 ; free physical = 1029 ; free virtual = 10269
-INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-INFO: [Common 17-83] Releasing license: Synthesis
-46 Infos, 99 Warnings, 76 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1695.305 ; gain = 518.723 ; free physical = 1018 ; free virtual = 10257
-INFO: [Common 17-1381] The checkpoint '/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1/rotate_fpga.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file rotate_fpga_utilization_synth.rpt -pb rotate_fpga_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1719.316 ; gain = 0.000 ; free physical = 1015 ; free virtual = 10255
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 19 08:31:03 2019...
+7 Infos, 84 Warnings, 84 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.973 ; gain = 330.398 ; free physical = 971 ; free virtual = 11199
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1597.004 ; gain = 81.031 ; free physical = 969 ; free virtual = 11195
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 219d73d99
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2055.434 ; gain = 0.000 ; free physical = 623 ; free virtual = 10834
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 219d73d99
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2055.434 ; gain = 0.000 ; free physical = 623 ; free virtual = 10834
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 264b87672
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2055.434 ; gain = 0.000 ; free physical = 623 ; free virtual = 10834
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 264b87672
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2055.434 ; gain = 0.000 ; free physical = 623 ; free virtual = 10834
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 264b87672
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2055.434 ; gain = 0.000 ; free physical = 623 ; free virtual = 10834
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2055.434 ; gain = 0.000 ; free physical = 623 ; free virtual = 10834
+Ending Logic Optimization Task | Checksum: 264b87672
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2055.434 ; gain = 0.000 ; free physical = 623 ; free virtual = 10834
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 17671abb0
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2055.434 ; gain = 0.000 ; free physical = 623 ; free virtual = 10834
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 84 Warnings, 84 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 2055.434 ; gain = 539.461 ; free physical = 623 ; free virtual = 10834
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2079.445 ; gain = 0.000 ; free physical = 622 ; free virtual = 10835
+INFO: [Common 17-1381] The checkpoint '/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1/rotate_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file rotate_top_drc_opted.rpt -pb rotate_fpga_drc_opted.pb -rpx rotate_fpga_drc_opted.rpx
+Command: report_drc -file rotate_top_drc_opted.rpt -pb rotate_fpga_drc_opted.pb -rpx rotate_fpga_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1/rotate_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2119.465 ; gain = 0.000 ; free physical = 605 ; free virtual = 10817
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 11a33c253
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2119.465 ; gain = 0.000 ; free physical = 605 ; free virtual = 10817
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2119.465 ; gain = 0.000 ; free physical = 605 ; free virtual = 10817
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1403a0802
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.68 . Memory (MB): peak = 2119.465 ; gain = 0.000 ; free physical = 604 ; free virtual = 10817
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1cbffd606
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2119.465 ; gain = 0.000 ; free physical = 603 ; free virtual = 10816
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1cbffd606
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2119.465 ; gain = 0.000 ; free physical = 603 ; free virtual = 10816
+Phase 1 Placer Initialization | Checksum: 1cbffd606
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2119.465 ; gain = 0.000 ; free physical = 603 ; free virtual = 10816
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 225c9b39f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 591 ; free virtual = 10803
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 225c9b39f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 591 ; free virtual = 10803
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19497e202
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 590 ; free virtual = 10803
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 13270422f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 590 ; free virtual = 10803
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 13270422f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 590 ; free virtual = 10803
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 14a755786
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10801
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 213a8a4b4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10801
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 213a8a4b4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10801
+Phase 3 Detail Placement | Checksum: 213a8a4b4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10801
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 237c2c97c
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 237c2c97c
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10802
+INFO: [Place 30-746] Post Placement Timing Summary WNS=4.614. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 281e72872
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10802
+Phase 4.1 Post Commit Optimization | Checksum: 281e72872
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10802
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 281e72872
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10802
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 281e72872
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10802
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 20dd75ee3
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10802
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 20dd75ee3
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 589 ; free virtual = 10802
+Ending Placer Task | Checksum: 117568854
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2175.492 ; gain = 56.027 ; free physical = 597 ; free virtual = 10810
+INFO: [Common 17-83] Releasing license: Implementation
+43 Infos, 84 Warnings, 84 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2175.492 ; gain = 0.000 ; free physical = 597 ; free virtual = 10812
+INFO: [Common 17-1381] The checkpoint '/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1/rotate_top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file rotate_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2175.492 ; gain = 0.000 ; free physical = 591 ; free virtual = 10805
+INFO: [runtcl-4] Executing : report_utilization -file rotate_top_utilization_placed.rpt -pb rotate_fpga_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2175.492 ; gain = 0.000 ; free physical = 596 ; free virtual = 10810
+INFO: [runtcl-4] Executing : report_control_sets -file rotate_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2175.492 ; gain = 0.000 ; free physical = 596 ; free virtual = 10810
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: f909efdc ConstDB: 0 ShapeSum: 1e4c9878 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: ddebbeb4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 471 ; free virtual = 10685
+Post Restoration Checksum: NetGraph: 3e3401a1 NumContArr: 9fb7bd13 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: ddebbeb4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 471 ; free virtual = 10685
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: ddebbeb4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 442 ; free virtual = 10656
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: ddebbeb4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 442 ; free virtual = 10656
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1ae9aba50
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.618  | TNS=0.000  | WHS=-0.144 | THS=-2.128 |
+
+Phase 2 Router Initialization | Checksum: 1b309aa46
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 433 ; free virtual = 10647
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 12ea4f7da
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.401  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 169ea9ea9
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+Phase 4 Rip-up And Reroute | Checksum: 169ea9ea9
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1930e2e32
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.493  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1930e2e32
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1930e2e32
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+Phase 5 Delay and Skew Optimization | Checksum: 1930e2e32
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1ad9b6ae5
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.493  | TNS=0.000  | WHS=0.148  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1bcfceb9f
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+Phase 6 Post Hold Fix | Checksum: 1bcfceb9f
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0588376 %
+  Global Horizontal Routing Utilization  = 0.0572618 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1e099a8f5
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1e099a8f5
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2562ec9a8
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=4.493  | TNS=0.000  | WHS=0.148  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 2562ec9a8
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 434 ; free virtual = 10648
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 465 ; free virtual = 10679
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+60 Infos, 84 Warnings, 84 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2212.137 ; gain = 36.645 ; free physical = 466 ; free virtual = 10680
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2212.137 ; gain = 0.000 ; free physical = 464 ; free virtual = 10680
+INFO: [Common 17-1381] The checkpoint '/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1/rotate_top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file rotate_top_drc_routed.rpt -pb rotate_fpga_drc_routed.pb -rpx rotate_fpga_drc_routed.rpx
+Command: report_drc -file rotate_top_drc_routed.rpt -pb rotate_fpga_drc_routed.pb -rpx rotate_fpga_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1/rotate_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file rotate_top_methodology_drc_routed.rpt -pb rotate_fpga_methodology_drc_routed.pb -rpx rotate_fpga_methodology_drc_routed.rpx
+Command: report_methodology -file rotate_top_methodology_drc_routed.rpt -pb rotate_fpga_methodology_drc_routed.pb -rpx rotate_fpga_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1/rotate_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file rotate_top_power_routed.rpt -pb rotate_fpga_power_summary_routed.pb -rpx rotate_fpga_power_routed.rpx
+Command: report_power -file rotate_top_power_routed.rpt -pb rotate_fpga_power_summary_routed.pb -rpx rotate_fpga_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+71 Infos, 84 Warnings, 84 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file rotate_top_route_status.rpt -pb rotate_fpga_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -file rotate_top_timing_summary_routed.rpt -warn_on_violation  -rpx rotate_fpga_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file rotate_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file rotate_top_clock_utilization_routed.rpt
+Command: write_bitstream -force rotate_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PDRC-153] Gated clock check: Net a_reg[15]_i_1_n_0 is a gated clock net sourced by a combinational pin a_reg[15]_i_1/O, cell a_reg[15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net a_reg[23]_i_1_n_0 is a gated clock net sourced by a combinational pin a_reg[23]_i_1/O, cell a_reg[23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net a_reg[31]_i_1_n_0 is a gated clock net sourced by a combinational pin a_reg[31]_i_1/O, cell a_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net a_reg[7]_i_1_n_0 is a gated clock net sourced by a combinational pin a_reg[7]_i_1/O, cell a_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net b_reg[4]_i_1_n_0 is a gated clock net sourced by a combinational pin b_reg[4]_i_1/O, cell b_reg[4]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 5 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./rotate_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Sep 19 14:00:59 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 89 Warnings, 84 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2528.859 ; gain = 200.641 ; free physical = 489 ; free virtual = 10656
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 19 14:00:59 2019...

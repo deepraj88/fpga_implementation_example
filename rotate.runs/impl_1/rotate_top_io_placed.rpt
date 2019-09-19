@@ -1,10 +1,10 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date                      : Thu Sep 19 08:32:08 2019
+| Date                      : Thu Sep 19 14:00:28 2019
 | Host                      : deepraj-Aurora-R4 running 64-bit Ubuntu 18.04.1 LTS
-| Command                   : report_io -file rotate_fpga_io_placed.rpt
-| Design                    : rotate_fpga
+| Command                   : report_io -file rotate_top_io_placed.rpt
+| Design                    : rotate_top
 | Device                    : xc7a35t
 | Speed File                : -1
 | Package                   : cpg236
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|             8 |
+|             4 |
 +---------------+
 
 
@@ -213,8 +213,8 @@ Table of Contents
 | T1         |              | High Range | IO_L3P_T0_DQS_34             | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T2         |              | High Range | IO_L1N_T0_34                 | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T3         |              | High Range | IO_L2N_T0_34                 | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| T17        | BTNR         | High Range | IO_L17P_T2_A14_D30_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| T18        | BTNU         | High Range | IO_L17N_T2_A13_D29_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| T17        |              | High Range | IO_L17P_T2_A14_D30_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| T18        |              | High Range | IO_L17N_T2_A13_D29_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T19        |              |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | U1         |              | High Range | IO_L3N_T0_DQS_34             | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U2         |              | High Range | IO_L9N_T1_DQS_34             | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -232,7 +232,7 @@ Table of Contents
 | U14        |              | High Range | IO_25_14                     | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U15        |              | High Range | IO_L23P_T3_A03_D19_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U16        |              | High Range | IO_L23N_T3_A02_D18_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| U17        | BTND         | High Range | IO_L18P_T2_A12_D28_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| U17        |              | High Range | IO_L18P_T2_A12_D28_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U18        | BTNC         | High Range | IO_L18N_T2_A11_D27_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U19        |              | High Range | IO_L15P_T2_DQS_RDWR_B_14     | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V1         |              | High Range | VCCO_34                      | VCCO          |             |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
@@ -272,7 +272,7 @@ Table of Contents
 | W16        |              | High Range | IO_L20P_T3_A08_D24_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W17        |              | High Range | IO_L20N_T3_A07_D23_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W18        |              | High Range | IO_L16P_T2_CSI_B_14          | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| W19        | BTNL         | High Range | IO_L16N_T2_A15_D31_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| W19        |              | High Range | IO_L16N_T2_A15_D31_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 +------------+--------------+------------+------------------------------+---------------+-------------+---------+------------+------+---------------------+----------------------+---------+------------+-----------+----------+------+------------------+--------------+-------------------+--------------+
 * Default value
 ** Special VCCO requirements may apply. Please consult the device family datasheet for specific guideline on VCCO requirements.
