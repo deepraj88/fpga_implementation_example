@@ -6,6 +6,12 @@ For nexsys4, change the ports of rotate_fpga.v and activate nexsys4.xdc file whi
 
 The Simulation file tb_aes_top.v provides, testbench for this.
 
+------INSTRUCTION VIDEO FOR PROJECT-------
+
+https://youtu.be/ZZnvHn8ZayU
+
+------------------------------------------
+
 For UART connection, I use moserial software in linux. It is easy to transmit and receive hex vlaues in this software. One can use any softwar to transmit hex values.
 UART configuration for software:
 Baud Rate --> 115200
