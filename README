@@ -6,6 +6,12 @@ For nexsys4, change the ports of rotate_fpga.v and activate nexsys4.xdc file whi
 
 The Simulation file tb_aes_top.v provides, testbench for this.
 
+------ Board file for Digilent Boards-----
+
+https://reference.digilentinc.com/reference/software/vivado/board-files?redirect=1
+
+------------------------------------------
+
 ------INSTRUCTION VIDEO FOR PROJECT-------
 
 https://youtu.be/ZZnvHn8ZayU

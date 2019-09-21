@@ -2,11 +2,11 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Sep 19 13:58:21 2019
-# Process ID: 8356
+# Start of session at: Sat Sep 21 13:29:23 2019
+# Process ID: 11095
 # Current directory: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1
-# Command line: vivado -log rotate_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rotate_top.tcl
-# Log file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1/rotate_top.vds
+# Command line: vivado -log rotate_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rotate_fpga.tcl
+# Log file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1/rotate_fpga.vds
 # Journal file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source rotate_top.tcl -notrace
+source rotate_fpga.tcl -notrace

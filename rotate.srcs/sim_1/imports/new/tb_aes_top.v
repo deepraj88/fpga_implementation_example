@@ -146,15 +146,15 @@ end
 
 always
  #5 clk100m = ~clk100m; 
-/*
- rotate_top u_rotate(
+
+ rotate_fpga u_rotate(
      .CLK100MHZ         (clk100m      ), 
      .BTNC            (!cpu_resetn         ),
-     .UART_TXD_IN2     (uart_txd_in  ),
-     .UART_RXD_OUT2    (uart_rxd_out )
-   );*/
+     .UART_TXD_IN     (uart_txd_in  ),
+     .UART_RXD_OUT    (uart_rxd_out )
+   );
    
-   
+   /*
    rotate_fpga u_leftrotate2(
        .CLK100MHZ         (clk100m      ), 
        .BTNC            (!cpu_resetn         ),
@@ -165,7 +165,7 @@ always
    //ß    .LED             (led          ),
        .UART_TXD_IN     (uart_txd_in  ),
        .UART_RXD_OUT    (uart_rxd_out2 )
-     );
+     );*/
 
 //wire error = (uart_rxd_out != uart_rxd_out2);
 /*
@@ -192,13 +192,13 @@ uart_wrapper2 u_uart_wrapper(
     .CLK           (clk100m        ),
     .CPU_RESET     (!cpu_resetn       ),
     .USB_UART_TX   (   ),
-    .USB_UART_RX   (uart_txd_in  ),
-    .O_RX_OUT      (      ), 
-    .O_RX_VLD      (      ),
-    .O_FRAME_ERROR ( ),
+    .USB_UART_RX2   (uart_txd_in  ),
+    .O_RX_OUT2      (      ), 
+    .O_RX_VLD2      (      ),
+    .O_FRAME_ERROR2 ( ),
     .I_TX_DATA     (counter_d ),
     .I_TX_START    (uart_start),
-    .O_BUSY        (uart_busy     )
+    .O_BUSY2        (uart_busy     )
     );  
 /*    
 always @(posedge ap_clk) begin
