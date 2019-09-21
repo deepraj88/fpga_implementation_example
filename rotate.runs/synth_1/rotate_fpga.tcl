@@ -29,7 +29,6 @@ set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/imports/new/leftrotate.v
 read_vhdl -library xil_defaultlib {
   /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_parity.vhd
   /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/new/uart_tx.vhd
