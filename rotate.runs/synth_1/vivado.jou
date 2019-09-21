@@ -9,3 +9,4 @@
 # Log file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1/rotate_fpga.vds
 # Journal file: /media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
+source rotate_fpga.tcl -notrace
