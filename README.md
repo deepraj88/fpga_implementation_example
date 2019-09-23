@@ -14,8 +14,9 @@ The Simulation file tb_aes_top.v provides, testbench for this.
 
 ------ Board file for Digilent Boards-----
 
-https://github.com/Digilent/vivado-boards
-https://reference.digilentinc.com/vivado/installing-vivado/start
+* Github repo for Digilent boards: https://github.com/Digilent/vivado-boards
+
+* Instructions for doanloading and configuring the board files in vivado: https://reference.digilentinc.com/vivado/installing-vivado/start
 
 ------------------------------------------
 
