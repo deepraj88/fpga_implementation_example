@@ -10,8 +10,8 @@ The Simulation file tb_aes_top.v provides, testbench for this.
 
 ## Block Diagram
 
-![This is the caption\label{mylabel}](./block_diagram.jpg)
-Description of figure \ref{mylabel}
+![Block Digram](./block_diagram.jpg)
+Description of block diagram
 
 * Orange color - The outside PC.
 * Red Color - Basys3/Nexsys4 FPGA board. Board has UART ports, clock, buttons ,switches, LED, USB.
