@@ -11,6 +11,13 @@ The Simulation file tb_aes_top.v provides, testbench for this.
 ## Block Diagram
 
 ![This is the caption\label{mylabel}](./block_diagram.jpg)
+Description of figure \ref{mylabel}
+
+* Orange color - The outside PC.
+* Red Color - Basys3/Nexsys4 FPGA board. Board has UART ports, clock, buttons ,switches, LED, USB.
+* Black Color - Artix-7 FPGA and its Pin. We use 4 pins for this project: W5, U18, A18, B18.
+* Green Color - Top module rotate_fpga. It has 4-IO ports connected with 4 pins of Artix-7 FPGA. It contains two modules; uart_wrapper and left_rotate. It also has sequential logic to recieve 8 bytes of input and transmit 4 bytes of output.
+* Blue Color - Shows uart_wrapper, converts serial data into 8-bit data; left_rotate, rotates the input a by shift amount b; sequential logic.
 
 ------ Board file for Digilent Boards-----
 
@@ -34,6 +41,7 @@ UART configuration for software:
 * Parity    --> none
 
 **Hint**: check the input without any rotate and receive the same data.
+
 **Example**: In the software transmit , "0123456789ab0000" in hex, you should receive --> "01234567".
 
 
