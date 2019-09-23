@@ -1,4 +1,4 @@
-#Description
+# Description
 
 This Vivado Project provides a UART connection to enter 2 32-bit inputs and measure 1 32-bit output. The Vivado version is 2017.3. It should work on any version above that. If not, create a new project and copy every file in the new project.
 
@@ -8,7 +8,7 @@ For nexsys4, change the ports of rotate_fpga.v and activate nexsys4.xdc file whi
 
 The Simulation file tb_aes_top.v provides, testbench for this.
 
-##Block Diagram
+## Block Diagram
 
 ![This is the caption\label{mylabel}](./block_diagram.jpg)
 
